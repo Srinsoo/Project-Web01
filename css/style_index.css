@@ -4,64 +4,62 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    padding-top: 25px; /* Ajusta esto a la altura de la barra de navegación */
 }
 
 .container_header {
-
     display: flex;
-
-    flex-direction: column; /* Define que los elementos se distribuyen en una fila */
-    /*justify-content: space-between; Distribuye los elementos a lo largo del ancho disponible */
-    align-items: center; /*Alinea los elementos verticalmente al centro */
-    flex-wrap: nowrap; /* Asegúrate de que los elementos no se envuelvan a la siguiente línea */
-
-    /*border: 2px solid black; PARA VER EL BORDE*/
-
-    width: 100%; /* Asegúrate de que el contenedor abarque todo el ancho de la pantalla */
+    flex-direction: column;
+    align-items: center;
     
-    padding: 0px; /* Puedes ajustar el padding según tus necesidades */
-    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho y alto */
+    width: 100%;
+    box-sizing: border-box;
+
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
     background-color: white;
-    margin: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
 
-    background-color: white; /* Fondo semi-transparente */
-    opacity: 0.8; /* Ajusta la opacidad según desees */
-    transition: opacity 0.5s; /* Transición suave de opacidad */
+/* 🔹 En móviles, reorganizamos el header */
+@media (max-width: 768px) {
+    .container_header {
+        flex-direction: column; /* Elementos en vertical */
+        height: auto; /* Permite que crezca si es necesario */
+        padding: 15px; /* Da más espacio */
+    }
 
-    position: fixed; /* Fija la posición del contenedor */
-    top: 0; /* Fija en la parte superior */
-    left: 0; /* Fija en la parte izquierda */
-    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    body {
+        padding-top: 80px; /* Ajusta el espacio en móviles */
+    }
 }
 
 .logo {
-    display: flex; /* Utiliza flexbox para alinear la imagen */
     width: 20px; /* Ajusta el ancho según tus necesidades */
     height: auto;
 }
 
 .navegation_bar {
     display: flex;
-    flex-direction: row;
-    /*border: 2px solid black; PARA VER EL BORDE*/
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 1080px;
     padding: 13px 30px;
-    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho y alto */
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
+    box-sizing: border-box;
 }
 
 .navegation_bar a {
     text-decoration: none; /* Quita el estilo especial predeterminado */
-    color: #666666;/* color para el texto*/
+    color: #666;/* color para el texto*/
     font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Cambia la fuente */
     font-weight: bold;/* negrita*/
+    transition: color 0.3s ease-in-out;
 }
 
 .navegation_bar a:hover {
-    color: black; /*Color al pasar el mouse*/
+    color: black;
 }
 
 .titulo_principal {
@@ -87,19 +85,18 @@ html, body {
 }
 
 .imagen_presentacion {
-    display: flex;
-    position: relative;
-    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho */
-    padding: 0;
+    max-width: 100%;
+    height: auto;
     margin: 0;
-    overflow:hidden
+    padding: 0;
+    overflow: hidden;
 }
 
 .imagen_presentacion img {
-    width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho del contenedor */
-    max-height: 500px; /* Establece una altura máxima */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor dentro de los límites */
+    width: 100%;
+    max-height: 500px;
+    height: auto;
+    object-fit: cover;
     display: block;
 }
 
