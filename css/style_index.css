@@ -12,7 +12,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
 
     position: fixed; /* Fija el header en la parte superior */
@@ -31,18 +31,27 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     width: 100%;
     max-width: 1080px;
     padding: 13px 30px;
+    
     box-sizing: border-box;
     overflow-x: auto; /* Permite desplazamiento horizontal */
     white-space: nowrap; /* Evita que los elementos bajen de línea */
-    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
 }
 
-/* 🔹 Para ocultar la barra de desplazamiento en navegadores Webkit (Chrome, Safari) */
+/* 🔹 Hace visible la barra de desplazamiento en todos los navegadores */
 .navegation_bar::-webkit-scrollbar {
-    display: none;
+    height: 4px; /* Ajusta el tamaño de la barra de desplazamiento */
+}
+.navegation_bar::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color de la barra */
+    border-radius: 3px;
+}
+
+.navegation_bar::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color de fondo */
 }
 
 @media (max-width: 768px) {
@@ -80,9 +89,7 @@ html, body {
     width: 100%; /* Asegúrate de que el contenedor abarque todo el ancho de la pantalla */
     background-color:  white;
     margin: 0 auto; /* Centra el contenedor horizontalmente */
-}
 
-.titulo_principal {
     color: #212121; /* Color del texto */
     font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Fuente del texto */
     font-weight: bold; /* Negrita */
