@@ -23,6 +23,15 @@ html, body {
     box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho y alto */
     background-color: white;
     margin: 0;
+
+    background-color: white; /* Fondo semi-transparente */
+    opacity: 0.8; /* Ajusta la opacidad según desees */
+    transition: opacity 0.5s; /* Transición suave de opacidad */
+
+    position: fixed; /* Fija la posición del contenedor */
+    top: 0; /* Fija en la parte superior */
+    left: 0; /* Fija en la parte izquierda */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
 }
 
 .logo {
@@ -63,16 +72,98 @@ html, body {
 
     /*border: 2px solid black;*/
 
-    padding: 10px;
+    padding: 60px;
     box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho y alto */
     width: 100%; /* Asegúrate de que el contenedor abarque todo el ancho de la pantalla */
-    background-color:  #f4f4f4;
+    background-color:  white;
     margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 
 .titulo_principal {
-    color: #666666; /* Color del texto */
+    color: #212121; /* Color del texto */
     font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Fuente del texto */
     font-weight: bold; /* Negrita */
+    font-size: 6vh; /* Tamaño en píxeles */
 }
 
+.imagen_presentacion {
+    display: flex;
+    position: relative;
+    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho */
+    padding: 0;
+    margin: 0;
+    overflow:hidden
+}
+
+.imagen_presentacion img {
+    width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho del contenedor */
+    max-height: 500px; /* Establece una altura máxima */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor dentro de los límites */
+    display: block;
+}
+
+/*R*/
+
+.container_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    gap: 10px; /* Espacio entre las tarjetas */
+}
+
+/* Ajuste de la tarjeta para que se adapten en diferentes tamaños de pantalla */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 300px; /* Ajuste flexible para que se adapten */
+    max-width: 100%; /* Asegura que la tarjeta no exceda el ancho del contenedor */
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card_image {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.card_content {
+    padding: 15px;
+}
+
+.card_title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.card_description {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.card_button {
+    display: block;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.card_button:hover {
+    background-color: #2980b9
