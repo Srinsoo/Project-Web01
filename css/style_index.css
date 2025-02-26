@@ -31,10 +31,18 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     max-width: 1080px;
     padding: 13px 30px;
     box-sizing: border-box;
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los elementos bajen de línea */
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+}
+
+/* 🔹 Para ocultar la barra de desplazamiento en navegadores Webkit (Chrome, Safari) */
+.navegation_bar::-webkit-scrollbar {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -45,13 +53,14 @@ html, body {
     }
 }
 
-
 .navegation_bar a {
     text-decoration: none; /* Quita el estilo especial predeterminado */
     color: #666;/* color para el texto*/
     font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Cambia la fuente */
     font-weight: bold;/* negrita*/
     transition: color 0.3s ease-in-out;
+    padding: 10px 15px; /* Espaciado para que se vean bien */
+    flex-shrink: 0; /* Evita que se reduzcan demasiado */
 }
 
 .navegation_bar a:hover {
