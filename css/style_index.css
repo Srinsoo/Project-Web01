@@ -105,18 +105,17 @@ html, body {
 }
 
 .imagen_presentacion {
-    
-    max-width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    width: 100vw;
+    margin: 0 auto;
 }
 
 .imagen_presentacion img {
     width: 100%;
     max-height: 500px;
-    height: auto;
     object-fit: cover;
     display: block;
 }
