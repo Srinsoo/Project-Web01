@@ -1,0 +1,78 @@
+/* Estilos de la pagina principal */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container_header {
+
+    display: flex;
+
+    flex-direction: column; /* Define que los elementos se distribuyen en una fila */
+    /*justify-content: space-between; Distribuye los elementos a lo largo del ancho disponible */
+    align-items: center; /*Alinea los elementos verticalmente al centro */
+    flex-wrap: nowrap; /* Asegúrate de que los elementos no se envuelvan a la siguiente línea */
+
+    /*border: 2px solid black; PARA VER EL BORDE*/
+
+    width: 100%; /* Asegúrate de que el contenedor abarque todo el ancho de la pantalla */
+    
+    padding: 0px; /* Puedes ajustar el padding según tus necesidades */
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho y alto */
+    background-color: white;
+    margin: 0;
+}
+
+.logo {
+    display: flex; /* Utiliza flexbox para alinear la imagen */
+    width: 20px; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+}
+
+.navegation_bar {
+    display: flex;
+    flex-direction: row;
+    /*border: 2px solid black; PARA VER EL BORDE*/
+    width: 100%;
+    max-width: 1080px;
+    padding: 13px 30px;
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho y alto */
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.navegation_bar a {
+    text-decoration: none; /* Quita el estilo especial predeterminado */
+    color: #666666;/* color para el texto*/
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Cambia la fuente */
+    font-weight: bold;/* negrita*/
+}
+
+.navegation_bar a:hover {
+    color: black; /*Color al pasar el mouse*/
+}
+
+.titulo_principal {
+    display: flex;
+    flex-direction: column; /* Define que los elementos se distribuyen en una fila */
+    align-items: center; /*Alinea los elementos verticalmente al centro */
+    flex-wrap: nowrap; /* Asegúrate de que los elementos no se envuelvan a la siguiente línea */
+
+    /*border: 2px solid black;*/
+
+    padding: 10px;
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho y alto */
+    width: 100%; /* Asegúrate de que el contenedor abarque todo el ancho de la pantalla */
+    background-color:  #f4f4f4;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.titulo_principal {
+    color: #666666; /* Color del texto */
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Fuente del texto */
+    font-weight: bold; /* Negrita */
+}
+
