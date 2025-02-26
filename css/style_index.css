@@ -4,15 +4,16 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    padding-top: 25px; /* Ajusta esto a la altura de la barra de navegación */
+    min-height: 100vh; /* Asegura que el contenido ocupe toda la pantalla */
+    padding-top: 20px; /* Debe ser igual a la altura de la barra */
 }
 
 .container_header {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
 
     position: fixed; /* Fija el header en la parte superior */
@@ -31,17 +32,16 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     width: 100%;
     max-width: 1080px;
     padding: 13px 30px;
-    
     box-sizing: border-box;
+
     overflow-x: auto; /* Permite desplazamiento horizontal */
     white-space: nowrap; /* Evita que los elementos bajen de línea */
 }
 
-/* 🔹 Hace visible la barra de desplazamiento en todos los navegadores */
+
 .navegation_bar::-webkit-scrollbar {
     height: 4px; /* Ajusta el tamaño de la barra de desplazamiento */
 }
@@ -56,12 +56,8 @@ html, body {
 
 @media (max-width: 768px) {
     .navegation_bar {
-        display: flex;
-        overflow-x: auto; /* Activa el desplazamiento horizontal */
-        white-space: nowrap; /* Evita el salto de línea */
         padding: 10px;
         max-width: 100%; /* Evita que la barra se desborde */
-        box-sizing: border-box;
     }
 
     .navegation_bar::-webkit-scrollbar {
@@ -109,6 +105,7 @@ html, body {
 }
 
 .imagen_presentacion {
+    
     max-width: 100%;
     height: auto;
     margin: 0;
