@@ -41,7 +41,6 @@ html, body {
     white-space: nowrap; /* Evita que los elementos bajen de línea */
 }
 
-
 .navegation_bar::-webkit-scrollbar {
     height: 4px; /* Ajusta el tamaño de la barra de desplazamiento */
 }
@@ -115,9 +114,12 @@ html, body {
 
 .imagen_presentacion img {
     width: 100%;
+    max-width: 1920px; /* No crece más allá de este tamaño */
     max-height: 500px;
     object-fit: cover;
     display: block;
+    object-position: bottom; /* Muestra la parte inferior de la imagen */
+    margin: 0 auto;
 }
 
 /*R*/
