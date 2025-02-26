@@ -91,7 +91,7 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: clamp(2rem, 6vw, 6rem);
+    font-size: clamp(3rem, 6vw, 6rem);
     font-weight: bold;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -115,7 +115,7 @@ html, body {
 .imagen_presentacion img {
     width: 100%;
     max-width: 1920px; /* No crece más allá de este tamaño */
-    max-height: 500px;
+    max-height: 200px;
     object-fit: cover;
     display: block;
     object-position: bottom; /* Muestra la parte inferior de la imagen */
