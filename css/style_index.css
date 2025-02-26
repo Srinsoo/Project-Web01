@@ -12,7 +12,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
 
     position: fixed; /* Fija el header en la parte superior */
@@ -20,19 +20,6 @@ html, body {
     left: 0;
     background-color: white;
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
-}
-
-/* 🔹 En móviles, reorganizamos el header */
-@media (max-width: 768px) {
-    .container_header {
-        flex-direction: column; /* Elementos en vertical */
-        height: auto; /* Permite que crezca si es necesario */
-        padding: 15px; /* Da más espacio */
-    }
-
-    body {
-        padding-top: 80px; /* Ajusta el espacio en móviles */
-    }
 }
 
 .logo {
@@ -44,11 +31,20 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     max-width: 1080px;
     padding: 13px 30px;
     box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+    .navegation_bar {
+        overflow-x: auto;
+        white-space: nowrap; /* Evita que los elementos se vayan a la siguiente línea */
+        padding: 10px;
+    }
+}
+
 
 .navegation_bar a {
     text-decoration: none; /* Quita el estilo especial predeterminado */
