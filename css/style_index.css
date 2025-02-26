@@ -56,9 +56,21 @@ html, body {
 
 @media (max-width: 768px) {
     .navegation_bar {
-        overflow-x: auto;
-        white-space: nowrap; /* Evita que los elementos se vayan a la siguiente línea */
+        display: flex;
+        overflow-x: auto; /* Activa el desplazamiento horizontal */
+        white-space: nowrap; /* Evita el salto de línea */
         padding: 10px;
+        max-width: 100%; /* Evita que la barra se desborde */
+        box-sizing: border-box;
+    }
+
+    .navegation_bar::-webkit-scrollbar {
+        height: 5px; /* Hace visible la barra de desplazamiento en Chrome/Safari */
+    }
+
+    .navegation_bar::-webkit-scrollbar-thumb {
+        background: #bbb;
+        border-radius: 10px;
     }
 }
 
