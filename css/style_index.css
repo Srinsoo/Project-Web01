@@ -1,50 +1,43 @@
 /* Estilos de la pagina principal */
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100vh; /* Asegura que el contenido ocupe toda la pantalla */
-    padding-top: 25px; /* Debe ser igual a la altura de la barra */
-    overflow-x: hidden;
+/**/
+
+body {
+    margin: 0; /*Eliminar los margenes que añade el navegador por defecto*/
+    overflow-x: hidden; /*Evitamos el movimiento horizontal*/
 }
 
 .container_header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width: 100vw;
-    box-sizing: border-box;
-
-    position: fixed; /* Fija el header en la parte superior */
-    top: 0;
-    left: 0;
-    background-color: white;
+    display: flex; /*Forma de crear un contenedor en el cual se puedan organizar elementos internos*/
+    justify-content: center; /*Centramos el contenido del contenedor*/
+    width: 100%; /*Usamos el 100% del ancho disponible*/
+    box-sizing: border-box; /*Nos evita desbordamientos por no tener encuenta el padding o los bordes*/
+    position: fixed; /*Mantiene fijo un elemento con respecto al viewport, y no se mueve al hacer scroll*/
+    background-color: white; /*Color del fondo del contenedor*/
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
-}
-
-.logo {
-    width: 20px; /* Ajusta el ancho según tus necesidades */
-    height: auto;
 }
 
 .navegation_bar {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1080px;
-    padding: 13px 30px;
+    align-items: center; /*Centra los objetos en su interior*/
+    justify-content: space-around; /*Crea un espacio igual entre todos los objetos dentro. Y tambien define un espacio entre los objetos y las esquinas*/
+    width: 100%; /*Aprovechmos el 100% de la pantalla disponible*/
+    max-width: 1080px; /*El maximo posible a utilizar es 1080px*/
+    padding: 11px 0px; /*Le añadimos un poco de altura y 0 de ancho adicional*/
     box-sizing: border-box;
-
     overflow-x: auto; /* Permite desplazamiento horizontal */
     white-space: nowrap; /* Evita que los elementos bajen de línea */
+}
+
+.logo {
+    width: 15px;
+    height: auto;
 }
 
 .navegation_bar::-webkit-scrollbar {
     height: 4px; /* Ajusta el tamaño de la barra de desplazamiento */
 }
+
 .navegation_bar::-webkit-scrollbar-thumb {
     background-color: #888; /* Color de la barra */
     border-radius: 3px;
@@ -71,18 +64,22 @@ html, body {
 }
 
 .navegation_bar a {
+    
     text-decoration: none; /* Quita el estilo especial predeterminado */
-    color: #666;/* color para el texto*/
+    color: #212121;/* color para el texto*/
     font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Cambia la fuente */
-    font-weight: bold;/* negrita*/
-    transition: color 0.3s ease-in-out;
-    padding: 10px 15px; /* Espaciado para que se vean bien */
+    font-size: 13px; /*Tamaño del texto*/
+    font-weight: 400; /*Grueso del texto*/
+    transition: color 0.3s ease-in-out; /*Pequeña transicion*/
+    padding:5px 20px; /* Espaciado para que se vean bien */
     flex-shrink: 0; /* Evita que se reduzcan demasiado */
 }
 
 .navegation_bar a:hover {
-    color: black;
+    color: black; /*Color que toma el texto cuando se pasa el mouse encima */
 }
+
+/*HASTA AQUÍ ESTÁ REVISADO*/
 
 .titulo_principal {
     margin: 0;
