@@ -6,6 +6,7 @@ html, body {
     width: 100%;
     min-height: 100vh; /* Asegura que el contenido ocupe toda la pantalla */
     padding-top: 25px; /* Debe ser igual a la altura de la barra */
+    overflow-x: hidden;
 }
 
 .container_header {
@@ -115,13 +116,14 @@ html, body {
 .imagen_presentacion img {
     width: 100%;
     max-width: 1920px; /* No crece más allá de este tamaño */
-    max-height: 200px;
+    max-height: 500px;
     object-fit: cover;
     display: block;
-    object-position: bottom; /* Muestra la parte inferior de la imagen */
+    object-position: center; /* Muestra la parte inferior de la imagen */
     margin: 0 auto;
     border-radius: 10px; /* Ajusta el radio del borde */
 }
+
 
 /*R*/
 
