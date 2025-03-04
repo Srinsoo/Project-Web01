@@ -5,86 +5,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/style_index_body.css">
     <title>Skyview</title>
 </head>
 
 <body>
     <header class="container_header">
-    <nav class="navegation_bar">
-        <div class="item_bar"> <a href="index.html"><img src="img/S_negro_png.png" alt="Pagina Principal" class="logo"></a> </div>
-        <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-forecast/107093">Hoy</a> </div>
-        <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/daily-weather-forecast/107093">Prevision</a> </div>
-        <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Radar</a> </div>
-        <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Foro</a> </div>
-        <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Informacion</a> </div>
-        <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Noticias</a> </div>
-        <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Productos</a> </div>
-        <div class="item_bar"> <a href="soporte.html">Soporte</a> </div>
-    </nav>
+        <nav class="navegation_bar">
+            <div class="item_bar"> <a href="index.html"><img src="img/S_negro_png.png" alt="Pagina Principal" class="logo"></a> </div>
+            <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-forecast/107093">Hoy</a> </div>
+            <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/daily-weather-forecast/107093">Prevision</a> </div>
+            <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Radar</a> </div>
+            <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Foro</a> </div>
+            <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Informacion</a> </div>
+            <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Noticias</a> </div>
+            <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Productos</a> </div>
+            <div class="item_bar"> <a href="soporte.html">Soporte</a> </div>
+        </nav>
     </header>
 
     <main>
         
         <section>
-            <figure class="imagen_presentacion">
-                <img src="img/Storm.jpg" alt="Paisaje">
-                <div class="degradado"></div>
-                <h1 class="titulo_principal">Skyview Web</h1>
-            </figure>
-            <br>
-
-            
-            <p> <b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. Voluptates sit alias blanditiis rem voluptatum quasi fuga? Qui dolor voluptatum quam tenetur officia alias voluptatem iure maxime eveniet, eaque, aperiam quisquam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla vitae ad aperiam perspiciatis similique pariatur excepturi, dicta odio eos perferendis provident iure! Alias minima fugiat aliquam temporibus. Rem, quibusdam quis.</p>
-            
+            <div class="video_container">
+                <h1 class="titulo_principal">Skyview</h1>
+                <video autoplay loop muted>
+                    <source src="video/Tierra4k.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div>
+                <h2 id="servicios">Servicios y Herramientas</h2>
+            </div>
         </section>
 
         <section>
             <div class="container_card">
-
-
                 <div class="card">
-                    <img src="img/hoy.png" alt="nubes con sol" class="card_image">
+                    <img src="logos/sun.png" alt="Sun" class="card_image">
                     <div class="card_content">
-                        <h2 class="card_title">Tiempo Hoy</h2>
-                        <p class="card_description">Descubra como estara el tiempo en su locacion</p>
+                        <h2 class="card_title">Clima Hoy</h2>
+                        <p class="card_description">Pronóstico para hoy</p>
                         <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-forecast/107093" class="card_button">Ver</a>
                     </div>
                 </div>
-
-
                 <div class="card">
-                    <img src="img/previson.png" alt="nubes con..." class="card_image">
+                    <img src="logos/sun_cloud.png" alt="Sun and clouds" class="card_image">
                     <div class="card_content">
-                        <h2 class="card_title">Prevision</h2>
-                        <p class="card_description">Descubra como estara el tiempo el día de mañana</p>
+                        <h2 class="card_title">Previsión</h2>
+                        <p class="card_description">Pronóstico de la semana</p>
                         <a href="https://www.accuweather.com/es/co/la-playa/107093/daily-weather-forecast/107093" class="card_button">Ver</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/radar.png" alt="nubes con sol" class="card_image">
+                    <img src="logos/radar.png" alt="radar" class="card_image">
                     <div class="card_content">
                         <h2 class="card_title">Radar</h2>
-                        <p class="card_description">Observe como está el tiempo</p>
+                        <p class="card_description">Observe como está el clima</p>
                         <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093" class="card_button">Ver</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/Foro.png" alt="nubes con sol" class="card_image">
+                    <img src="logos/Foro.png" alt="Foro" class="card_image">
                     <div class="card_content">
                         <h2 class="card_title">Foro</h2>
-                        <p class="card_description">Enterese</p>
+                        <p class="card_description">Hablar con otras personas</p>
                         <a href="https://www.accuweather.com/es/co/la-playa/107093/minute-weather-forecast/107093" class="card_button">Ver</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/Soporte.png" alt="nubes con sol" class="card_image">
+                    <img src="logos/news.png" alt="news" class="card_image">
                     <div class="card_content">
-                        <h2 class="card_title">Soporte</h2>
-                        <p class="card_description">Contacte con el equipo tecnico</p>
+                        <h2 class="card_title">Noticias</h2>
+                        <p class="card_description">Lo más reciente</p>
                         <a href="soporte.html" class="card_button">Ver</a>
                     </div>
                 </div>
+                <div class="card">
+                    <img src="logos/info.png" alt="Informacion" class="card_image">
+                    <div class="card_content">
+                        <h2 class="card_title">Info</h2>
+                        <p class="card_description">Conceptos clave</p>
+                        <a href="soporte.html" class="card_button">Ver</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="logos/edu.png" alt="aprender" class="card_image">
+                    <div class="card_content">
+                        <h2 class="card_title">Academia</h2>
+                        <p class="card_description">Aprender sobre meteorología</p>
+                        <a href="soporte.html" class="card_button">Ver</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="logos/buzon.png" alt="buzon" class="card_image">
+                    <div class="card_content">
+                        <h2 class="card_title">Buzón</h2>
+                        <p class="card_description">Comentarios</p>
+                        <a href="soporte.html" class="card_button">Ver</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="logos/network.png" alt="redes" class="card_image">
+                    <div class="card_content">
+                        <h2 class="card_title">Redes</h2>
+                        <p class="card_description">Redes sociales</p>
+                        <a href="soporte.html" class="card_button">Ver</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="logos/tienda.png" alt="tienda" class="card_image">
+                    <div class="card_content">
+                        <h2 class="card_title">Tienda</h2>
+                        <p class="card_description">Souvenirs</p>
+                        <a href="soporte.html" class="card_button">Ver</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="logos/help.png" alt="help" class="card_image">
+                    <div class="card_content">
+                        <h2 class="card_title">Donación</h2>
+                        <p class="card_description">Ayudenos a crecer</p>
+                        <a href="soporte.html" class="card_button">Ver</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="logos/Soporte.png" alt="soporte" class="card_image">
+                    <div class="card_content">
+                        <h2 class="card_title">Soporte</h2>
+                        <p class="card_description">Contacte con el equipo técnico</p>
+                        <a href="soporte.html" class="card_button">Ver</a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
