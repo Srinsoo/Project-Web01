@@ -24,14 +24,14 @@ body {
     padding: 20px;
     margin: 0 auto;
     gap: 25px; /* Espacio entre las tarjetas */
-    
+    max-width: 1400px; /*Para que maximo hayan 6 por fila*/
 }
 
 .card {
     background-color: white;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px; /* Ajuste flexible para que se adapten */
-    max-width: 300px; /* Asegura que la tarjeta no exceda el ancho del contenedor */
+    flex: 1 1 200px; /* Ajuste flexible para que se adapten */
+    max-width: 200px; /* Asegura que la tarjeta no exceda el ancho del contenedor */
     transition: transform 0.2s;
     
 }
@@ -96,3 +96,148 @@ body {
 .card_button:hover {
     background-color: black
     }
+
+/*Sección de Registro*/
+
+.section_gris {
+    display: flex;
+    justify-content: center;
+    background-color: #F5f5f7;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 70px;
+    max-width: 1000px;
+    overflow-x: hidden;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+#registro_titulo {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(2rem, 3vw, 4rem);
+}
+
+.parrafo {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #212121;
+    max-width: 80%;
+}
+
+.tabla_registro {
+    align-items: center;
+    background-color: #F5f5f7;
+    width: 100%;
+    border-collapse: separate; /* Permite que border-radius funcione */
+    border-spacing: 0; /* Evita espacios extra entre celdas */
+    border-radius: 15px; /* Ajusta el radio de las esquinas */
+    overflow: hidden; /* Asegura que el contenido respete el borde redondeado */
+}
+
+.tabla_titulo {
+    background-color: #9bd3ae;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid white;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+th a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+}
+
+th a:hover {   
+    color: #888;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #666; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a "mano" */
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Fuente del texto */
+    font-weight: bold; /* Negrita */
+}
+
+input[type="submit"]:hover {
+    background-color: black; /* Color más oscuro al pasar el mouse */
+}
+
+
+@media (max-width: 600px) {
+    tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    th, td {
+        flex: 1 1 100%; /* Cada celda ocupa el 100% */
+        text-align: center;
+    }
+}
+
+/*footer REVISAR*/
+
+.pie_pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pie_section {
+    max-width: 400px;
+    margin: 20px;
+}
+
+.foto_ori img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 3px solid white;
+}
+
+.descripcion {
+    list-style: none;
+    padding: 0;
+}
+
+.descripcion li {
+    margin-bottom: 5px;
+}

@@ -17,9 +17,9 @@
             <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/daily-weather-forecast/107093">Prevision</a> </div>
             <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Radar</a> </div>
             <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Foro</a> </div>
-            <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Informacion</a> </div>
-            <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Noticias</a> </div>
-            <div class="item_bar"> <a href="https://www.accuweather.com/es/co/la-playa/107093/weather-radar/107093">Productos</a> </div>
+            <div class="item_bar"> <a href="https://es.wikipedia.org/wiki/Clima">Informacion</a> </div>
+            <div class="item_bar"> <a href="https://www.bing.com/news/search?q=noticias+del+clima&FORM=HDRSC8">Noticias</a> </div>
+            <div class="item_bar"> <a href="soporte.html">Tienda</a> </div>
             <div class="item_bar"> <a href="soporte.html">Soporte</a> </div>
         </nav>
     </header>
@@ -77,7 +77,7 @@
                     <div class="card_content">
                         <h2 class="card_title">Noticias</h2>
                         <p class="card_description">Lo más reciente</p>
-                        <a href="soporte.html" class="card_button">Ver</a>
+                        <a href="https://www.bing.com/news/search?q=noticias+del+clima&FORM=HDRSC8" class="card_button">Ver</a>
                     </div>
                 </div>
                 <div class="card">
@@ -85,7 +85,7 @@
                     <div class="card_content">
                         <h2 class="card_title">Info</h2>
                         <p class="card_description">Conceptos clave</p>
-                        <a href="soporte.html" class="card_button">Ver</a>
+                        <a href="https://es.wikipedia.org/wiki/Clima" class="card_button">Ver</a>
                     </div>
                 </div>
                 <div class="card">
@@ -93,7 +93,7 @@
                     <div class="card_content">
                         <h2 class="card_title">Academia</h2>
                         <p class="card_description">Aprender sobre meteorología</p>
-                        <a href="soporte.html" class="card_button">Ver</a>
+                        <a href="https://wordwall.net/es-ar/community/el-clima" class="card_button">Ver</a>
                     </div>
                 </div>
                 <div class="card">
@@ -140,77 +140,85 @@
             </div>
         </section>
 
-        <section>
-            <figure>
-                <img src="https://th.bing.com/th/id/OIP.4gxx_SYpn-2aGO5J8lh_FwHaE9?rs=1&pid=ImgDetMain" alt="Foto de celular">
-            </figure>
+        <section class="section_gris">
 
-            <div>
-                <h2>Registro</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur asperiores itaque</p>
-                <table border="2">
+            <div class="registro">
+
+                <h2 id="registro_titulo">Registro</h2>
+                <p class="parrafo">Ingrese sus datos para acceder a todos los servicios</p>
+
+                <table class="tabla_registro">
+
                     <thead>
-                        <tr>
+
+                        <tr class="tabla_titulo">
                             <th colspan="4">Registre sus datos</th>
                         </tr>
+
                     </thead>
+
                     <tbody>
+
                         <tr>
                             <th>Nombre</th><th><input type="text" placeholder="Ingrese su Nombre"></th>
                             <th>Apellido</th><th><input type="text" placeholder="Ingrese su Apellido"></th>
                         </tr>
+
                         <tr>
                             <th>Correo</th><th><input type="Email" placeholder="Ingrese su email"></th>
                             <th>Telefono</th><th><input type="number" placeholder="Ingrese su Número"></th>
                         </tr>
+
                         <tr>
-                            <th>Dirección</th><th><input type="text" placeholder="Ingrese su Dirección"></th><th>Fecha de nacimiento</th><th><input type="date"></th>
+                            <th>Dirección</th><th><input type="text" placeholder="Ingrese su Dirección"></th>
+                            <th>Fecha de nacimiento</th><th><input type="date"></th>
                         </tr>
+
                         <tr>
-                            <th>Sexo</th><th colspan="3"><input type="radio" name="sexo" checked>Masculino
-                                <input type="radio" name="sexo">Femenino</th>
+                            <th>Sexo</th><th colspan="3"><input type="radio" name="sexo" checked>Masculino<input type="radio" name="sexo">Femenino</th>
                         </tr>
+
                         <tr>
                             <th>Contraseña</th><th colspan="3"><input type="text" placeholder="Ingrese su Contraseña"></th>
                         </tr>
+
                         <tr>
                             <th>Terminos y condiciones</th><th><input type="checkbox">Aceptar</th><th colspan="2"><a href="https://www.accuweather.com/es/legal">Ver Terminos y condiciones</a></th>
                         </tr>
+
                         <tr>
                             <th colspan="4"><input type="submit" value="Enviar"></th>
                         </tr>
+
                     </tbody>
 
                 </table>
+
             </div>
 
         </section>
 
     </main>
 
-    <footer>
-        <section>
-            <div>
-                <h4>Orinson Coba</h4>
-                <figure>
-                    <img src="img/OrinsonCoba.png" alt="Foto del desarrollador">
-                    <figcaption>
-                        <b>Orinson en el 2025</b>
-                    </figcaption>
-                </figure>
-                </section>
+    <footer class="pie_pagina">
+        <section class="pie_section">
+            <h4>Orinson Coba</h4>
+            <figure class="foto_ori">
+                <img src="img/OrinsonCoba.png" alt="Foto del desarrollador">
+                <figcaption>
+                    <b>Orinson en el 2025</b>
+                </figcaption>
+            </figure>
 
-                <section>
-                <h5>Información general</h5>
-                <ul>
-                    <li>Nombre Completo: Orinson De Jesús Coba Núñez</li>
-                    <li>Edad: 20 años</li>
-                    <li>Estudios: Universidad de la costa</li>
-                    <li>Carrera: Ingeniería de sistemas</li>
-                </ul>
-                <h5>Breve descripción</h5>
-                <p>Dedicado estudiante del programa de ingeniería de sistemas. Actualmente cursando el séptimo semestre, con aspiraciones de ser desarrollador y arquitecto en la nube. </p>
-            </div>
+            <h4>Información general</h4>
+            <ul class="descripcion">
+                <li>Nombre Completo: Orinson De Jesús Coba Núñez</li>
+                <li>Edad: 20 años</li>
+                <li>Estudios: Universidad de la costa</li>
+                <li>Carrera: Ingeniería de sistemas</li>
+            </ul>
+            <h4>Breve descripción</h4>
+            <p class="parrafo">Dedicado estudiante del programa de ingeniería de sistemas. Actualmente cursando el séptimo semestre, con aspiraciones de ser desarrollador y arquitecto en la nube. </p>
         </section>
 
     </footer>
