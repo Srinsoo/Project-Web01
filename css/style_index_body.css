@@ -1,5 +1,4 @@
 body {
-    border: 2px solid black;
     margin: auto; /*Eliminar los margenes que añade el navegador por defecto*/
     overflow-x: hidden; /*Evitamos el movimiento horizontal*/
     max-width: clamp(960px, 100%, 1920px);
