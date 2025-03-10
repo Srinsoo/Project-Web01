@@ -14,6 +14,15 @@ body {
     font-size: clamp(2rem, 3vw, 4rem);
 }
 
+.parrafo {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #212121;
+    max-width: 80%;
+}
+
 /*Cartas*/
 
 .container_card {
@@ -127,15 +136,6 @@ body {
     font-size: clamp(2rem, 3vw, 4rem);
 }
 
-.parrafo {
-    text-align: center;
-    line-height: 1.5;
-    margin-bottom: 40px;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #212121;
-    max-width: 80%;
-}
-
 .tabla_registro {
     align-items: center;
     background-color: #F5f5f7;
@@ -211,15 +211,19 @@ input[type="submit"]:hover {
 
 .pie_pagina {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    background-color: #222;
+    background-color: #212121;
     color: white;
     padding: 20px;
     text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .pie_section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     max-width: 400px;
     margin: 20px;
 }
@@ -227,9 +231,7 @@ input[type="submit"]:hover {
 .foto_ori img {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
     margin-top: 10px;
-    border: 3px solid white;
 }
 
 .descripcion {
@@ -239,4 +241,11 @@ input[type="submit"]:hover {
 
 .descripcion li {
     margin-bottom: 5px;
+}
+
+.parrafo_pie_pagina {
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: white;
 }
